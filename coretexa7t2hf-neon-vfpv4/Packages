@@ -1,0 +1,68 @@
+Package: libair-485-1
+Version: 1.0-r0
+Depends: libc6 (>= 2.39+git0+b027d5b145)
+Provides: rs485-lib
+Section: base
+Architecture: cortexa7t2hf-neon-vfpv4
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: e7a1e0d0e16179843a365d80c15ea6f1
+SHA256sum: 3740a574b5859681618f2ce5d58b70b7a16bf162adf31c48d4b550e9ec82c935
+Size: 18248
+Filename: libair-485-1_1.0-r0_cortexa7t2hf-neon-vfpv4.ipk
+Source: rs485-lib.bb
+Description: RS485 library
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+Package: libair-485-dbg
+Version: 1.0-r0
+Provides: rs485-lib-dbg
+Recommends: glibc-dbg
+Section: devel
+Architecture: cortexa7t2hf-neon-vfpv4
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: 2b8727ba535c446037caadf0083a9742
+SHA256sum: 1143920a84350a564d79ebd6a341a61a24669df3ea2aa039985070818cf05565
+Size: 60056
+Filename: libair-485-dbg_1.0-r0_cortexa7t2hf-neon-vfpv4.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Debugging files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+Package: libair-485-dev
+Version: 1.0-r0
+Depends: rs485-lib
+Provides: rs485-lib-dev
+Recommends: glibc-dev, libair-485-1 (= 1.0-r0), libmodbus-dev
+Section: devel
+Architecture: cortexa7t2hf-neon-vfpv4
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: e034894c2d405ced596037a10c43ffc6
+SHA256sum: 93b7bab77514416611b7a7e3cff92e279b7ac2981241d7dbb0005e2df9edd2af
+Size: 774
+Filename: libair-485-dev_1.0-r0_cortexa7t2hf-neon-vfpv4.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Development files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+Package: libair-485-src
+Version: 1.0-r0
+Provides: rs485-lib-src
+Section: devel
+Architecture: cortexa7t2hf-neon-vfpv4
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: 74c92990f9bcac23f6c462bfdd2f3da8
+SHA256sum: c8c6bf0adfd253148e96f7d8b710a5d03f3fdc3ee745293ff232400ced84a015
+Size: 1356
+Filename: libair-485-src_1.0-r0_cortexa7t2hf-neon-vfpv4.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Source files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
