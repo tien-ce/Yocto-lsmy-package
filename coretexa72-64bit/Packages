@@ -1,0 +1,68 @@
+Package: libair-485-1
+Version: 1.0-r0
+Depends: libc6 (>= 2.39+git0+b027d5b145), libmodbus5 (>= 3.1.10)
+Provides: rs485-lib
+Section: base
+Architecture: cortexa72
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: 7ae8221fa923eca20a1891dbddf4ffe7
+Size: 3326
+Filename: libair-485-1_1.0-r0_cortexa72.ipk
+Source: rs485-lib.bb
+Description: RS485 library
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+
+Package: libair-485-dbg
+Version: 1.0-r0
+Provides: rs485-lib-dbg
+Recommends: glibc-dbg, libmodbus-dbg
+Section: devel
+Architecture: cortexa72
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: b98c6baf295c4c9a11b887d6f5b1d96d
+Size: 5610
+Filename: libair-485-dbg_1.0-r0_cortexa72.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Debugging files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+
+Package: libair-485-dev
+Version: 1.0-r0
+Depends: rs485-lib
+Provides: rs485-lib-dev
+Recommends: glibc-dev, libair-485-1 (= 1.0-r0), libmodbus-dev
+Section: devel
+Architecture: cortexa72
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: 9f5f117c3f332263591cc1391951d77a
+Size: 766
+Filename: libair-485-dev_1.0-r0_cortexa72.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Development files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+
+Package: libair-485-src
+Version: 1.0-r0
+Provides: rs485-lib-src
+Section: devel
+Architecture: cortexa72
+Maintainer: Poky Maintainers <poky@lists.yoctoproject.org>
+MD5Sum: 4ae86d278908cdb7b1f018a647a4a050
+Size: 1348
+Filename: libair-485-src_1.0-r0_cortexa72.ipk
+Source: rs485-lib.bb
+Description: RS485 library - Source files
+OE: rs485-lib
+License: MIT
+Priority: optional
+
+
